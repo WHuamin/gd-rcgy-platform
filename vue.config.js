@@ -10,6 +10,17 @@ module.exports = defineConfig({
   lintOnSave: false, // 是否在开发环境下通过 eslint-loader 在每次保存时 lint 代码
   runtimeCompiler: true, // 是否使用包含运行时编译器的 Vue 构建版本
 
+  // css相关选项
+  css: {
+    // 为预处理器 loader 传递自定义选项
+    loaderOptions: {
+      scss: {
+        additionalData:
+          '@import "~@/assets/css/element-variables.scss";@import "~@/assets/css/layout-variables.scss";'
+      }
+    }
+  },
+
   configureWebpack: (config) => {
     config.resolve = {
       // 配置解析别名

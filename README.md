@@ -52,3 +52,19 @@ local代表本地、development代表开发环境、test代表测试环境、pro
 ② 在项目里调用：process.env.xxxx
 
 ```
+
+## ElementUI 安装UI框架
+```
+安装依赖：npm install element-plus --save
+```
+
+## constant目录 存放项目常量
+```
+1.website.config.js 存放网站信息配置
+
+```
+
+## vuex
+```
+
+```
